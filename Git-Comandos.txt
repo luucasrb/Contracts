@@ -1,0 +1,39 @@
+Comandos git 
+
+git config --global user.name "Lucas Ribeiro"
+git config --global user.email "luucas-rb@hotmail.com"
+
+git --help  			-- lista os comandos
+git help -a 
+
+git init 			-- cria repositorio
+git status 			-- ve o status
+git add readme.txt 		-- adiciona o arquivo readme para a area de espera
+git add . 			-- add todos os arquivos para a area de espera
+git commit -m "commit inicial"  -- comita os arquivos da area de espera
+touch .gitignore 		-- cria o arquivo .gitignore
+git commit -a -m "commid 2"	-- pula o add e comita direto
+git diff 			-- mostra o que mudou no arquivo adicionado
+git diff --staged		-- mostra o que mudou nos arquivos da staged area
+git log 			-- mostra um log de todos os commits
+git log -p			-- mostra o lop e o diff 
+Q 				-- termina o comando
+git log -p -1			-- limite em apenas um log de commit (o último)
+gitk 				-- abre a interface gráfica do git
+
+git commit --amend -m "mensagem"--
+
+git reset HEAD novo.php         -- remove arquivo indesejado na staging area
+git checkout -- novo.php 	-- reverter arquivo modificado p o original
+
+git tag 			-- lista as tags do sistema
+git tag -a v1.0 -m "Versão 1.0  -- define a tag 
+-a 				-- cria uma tag anotada (nome e data do criador etc)
+git log --pretty=oneline 	-- mostra as chaves dos commits
+git tag -a v0.0 "chave"	-m "msg"-- cria tag da versão para tal commit
+git show v1.0 			-- mostra todos os detalhes da tag
+git checkout v0.0 		-- mostra os arquivos da versão 0.0
+
+
+git fetch origin 
+git push origin master
